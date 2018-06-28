@@ -1,12 +1,12 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0xBitcoin Token' contract
+// 'Cryptopepes' contract
 // Mineable ERC20 Token using Proof Of Work
 //
-// Symbol      : 0xBTC
-// Name        : 0xBitcoin Token
-// Total supply: 21,000,000.00
+// Symbol      : PEP
+// Name        : Cryptopepes Token
+// Total supply: 50,000,000.00
 // Decimals    : 8
 //
 
