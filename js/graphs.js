@@ -557,8 +557,8 @@ function generateDifficultyGraph(eth, target_cv_obj, era_cv_obj, tokens_minted_c
   datasetCopy[0] = Object.assign({}, datasetCopy[0]);
   datasetCopy[1] = Object.assign({}, datasetCopy[1]);
   /* set y-values to ideal block time */
-  datasetCopy[0].y = _IDEAL_BLOCK_TIME_SECONDS / 60;
-  datasetCopy[1].y = _IDEAL_BLOCK_TIME_SECONDS / 60;
+  datasetCopy[0].y = 8;
+  datasetCopy[1].y = 8;
   //console.log('datasetCopy', datasetCopy);
 
   /* block time chart */
