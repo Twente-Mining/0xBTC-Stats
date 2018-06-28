@@ -147,12 +147,12 @@ contract _Cryptopepes is ERC20Interface, Owned {
         symbol = "PEP";
         name = "CryptopepesToken";
         decimals = 18;
-        _totalSupply = 50000000 * 10**uint(decimals);
+        _totalSupply = 50000000 **uint(decimals);
         if(locked) revert();
         locked = true;
         tokensMinted = 0;
         rewardEra = 1;
-        maxSupplyForEra = 50000000000000000000000000;
+        maxSupplyForEra = 500000000;
         miningTarget = _MAXIMUM_TARGET;
         latestDifficultyPeriodStarted = block.number;
         _startNewMiningEpoch();
