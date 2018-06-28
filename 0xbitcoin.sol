@@ -7,7 +7,7 @@ pragma solidity ^0.4.18;
 // Symbol      : PEP
 // Name        : Cryptopepes Token
 // Total supply: 50,000,000.00
-// Decimals    : 8
+// Decimals    : 18
 //
 
 // ----------------------------------------------------------------------------
