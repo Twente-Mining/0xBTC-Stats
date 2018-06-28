@@ -1,4 +1,4 @@
-if (document.location.hostname == "0x1d00ffff.github.io") {
+if (document.location.hostname == "twente-mining.github.io/Cryptopepes-Stats") {
 	console.log('using gtag');
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
