@@ -151,8 +151,8 @@ contract _Cryptopepes is ERC20Interface, Owned {
         if(locked) revert();
         locked = true;
         tokensMinted = 0;
-        rewardEra = 0;
-        maxSupplyForEra = _totalSupply.div(2);
+        rewardEra = 1;
+        maxSupplyForEra = 50000000000000000000000000;
         miningTarget = _MAXIMUM_TARGET;
         latestDifficultyPeriodStarted = block.number;
         _startNewMiningEpoch();
@@ -200,7 +200,7 @@ contract _Cryptopepes is ERC20Interface, Owned {
       //once the final era is reached, more tokens will not be given out because the assert function
       if( tokensMinted.add(getMiningReward()) > maxSupplyForEra && rewardEra < 39)
       {
-        rewardEra = rewardEra + 1;
+        rewardEra = rewardEra + 0;
       }
       //set the next minted supply at which the era will change
       // total supply is 5000000000000000  because of 8 decimal places
