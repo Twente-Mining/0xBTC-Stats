@@ -19,12 +19,12 @@ const _ZERO_BN = new Eth.BN(0, 10);
 /* contract constants */
 /* todo: pull these from the contract */
 /* todo: move these into some kind of contract helper class */
-const _BLOCKS_PER_READJUSTMENT = 1024;
+const _BLOCKS_PER_READJUSTMENT = 20;
 const _CONTRACT_ADDRESS = "0xdf7ab88f426d1776e8b271b2c722ccb0a0abd58c";
 const _MINT_TOPIC = "0xcf6fbb9dcea7d07263ab4f5c3a92f53af33dffc421d9d121e1c74b307e68189d";
 const _MAXIMUM_TARGET_STR = "27606985387162255149739023449108101809804435888681546220650096895197184";  // 2**234
 const _MINIMUM_TARGET = 2**16;
-const _ETH_BLOCKS_PER_REWARD = 60;
+const _ETH_BLOCKS_PER_REWARD = 31;
 /* calculated contract values */
 const _MAXIMUM_TARGET_BN = new Eth.BN(_MAXIMUM_TARGET_STR, 10);
 const _MINIMUM_TARGET_BN = new Eth.BN(_MINIMUM_TARGET);
@@ -78,7 +78,7 @@ var known_miners = {
 /*  "0x69ebd94944f0dba3e9416c609fbbe437b45d91ab" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],
 /*  "0x69b85604799d16d938835852e497866a7b280323" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],*/
   
-  "0xb22e7911E0F980Af0c5D4103d6ED39beB93eD098" : [ " TWM",        "pool.twentemining.nl",               pool_colors.yellow ],
+  "0x665260b108739033826A3bCFc58C02E408d9dB36" : [ " TWM",        "pool.twentemining.nl",               pool_colors.yellow ],
 }
 
 
