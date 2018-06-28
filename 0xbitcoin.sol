@@ -144,10 +144,10 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function _0xBitcoinToken() public onlyOwner{
 
-        symbol = "0xBTC";
-        name = "0xBitcoin Token";
+        symbol = "PEP";
+        name = "CryptopepesToken";
         decimals = 8;
-        _totalSupply = 21000000 * 10**uint(decimals);
+        _totalSupply = 50000000 * 10**uint(decimals);
         if(locked) revert();
         locked = true;
         tokensMinted = 0;
@@ -203,7 +203,7 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
         rewardEra = rewardEra + 1;
       }
       //set the next minted supply at which the era will change
-      // total supply is 2100000000000000  because of 8 decimal places
+      // total supply is 5000000000000000  because of 8 decimal places
       maxSupplyForEra = _totalSupply - _totalSupply.div( 2**(rewardEra + 1));
       epochCount = epochCount.add(1);
       //every so often, readjust difficulty. Dont readjust when deploying
@@ -269,12 +269,12 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
        return miningTarget;
    }
 
-    //21m coins total
-    //reward begins at 50 and is cut in half every reward era (as tokens are mined)
+    //50m coins total
+    //reward begins at 5000 and is cut in half every reward era (as tokens are mined)
     function getMiningReward() public constant returns (uint) {
         //once we get half way thru the coins, only get 25 per block
          //every reward era, the reward amount halves.
-         return (50 * 10**uint(decimals) ).div( 2**rewardEra ) ;
+         return (5000 * 10**uint(decimals) ).div( 2**rewardEra ) ;
     }
     //help debug mining software
     function getMintDigest(uint256 nonce, bytes32 challenge_digest, bytes32 challenge_number) public view returns (bytes32 digesttest) {
