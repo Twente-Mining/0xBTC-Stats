@@ -100,7 +100,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and an
 // initial fixed supply
 // ----------------------------------------------------------------------------
-contract _0xBitcoinToken is ERC20Interface, Owned {
+contract _Cryptopepes is ERC20Interface, Owned {
     using SafeMath for uint;
     using ExtendedMath for uint;
 
@@ -113,7 +113,7 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
 
     uint public epochCount;//number of 'blocks' mined
 
-    uint public _BLOCKS_PER_READJUSTMENT = 1024;
+    uint public _BLOCKS_PER_READJUSTMENT = 20;
 
     //a little number
     uint public  _MINIMUM_TARGET = 2**16;
@@ -146,7 +146,7 @@ contract _0xBitcoinToken is ERC20Interface, Owned {
 
         symbol = "PEP";
         name = "CryptopepesToken";
-        decimals = 8;
+        decimals = 18;
         _totalSupply = 50000000 * 10**uint(decimals);
         if(locked) revert();
         locked = true;
