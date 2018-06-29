@@ -2,7 +2,7 @@ pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
 // 'Cryptopepes' contract
-// Mineable ERC20 Token using Proof Of Work
+// Mineable ERC721 Token using Proof Of Work
 //
 // Symbol      : PEP
 // Name        : Cryptopepes Token
