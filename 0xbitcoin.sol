@@ -152,7 +152,7 @@ contract _Cryptopepes is ERC20Interface, Owned {
         locked = true;
         tokensMinted = 0;
         rewardEra = 1;
-        maxSupplyForEra = 500000000;
+        maxSupplyForEra = 50000000;
         miningTarget = _MAXIMUM_TARGET;
         latestDifficultyPeriodStarted = block.number;
         _startNewMiningEpoch();
