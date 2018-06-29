@@ -181,15 +181,15 @@ stats = [
   ['Rewards Until Readjustment',    null,                                 "",           1,          null     ], /* mining difficulty */
   ['Current Average Reward Time',   null,                                 "minutes",    1,          null     ], /* mining difficulty */
   //['Last Difficulty Start Block',   token.latestDifficultyPeriodStarted,  "",           1,          null     ], /* mining difficulty */
-  //['Tokens Minted',                 token.tokensMinted,                   "PEP",      0.00000001, null     ], /* supply */
+  ['Tokens Minted',                 token.gettokensMinted,                   "PEP",      1, null     ], /* supply */
   //['Max Supply for Current Era',    token.maxSupplyForEra,                "PEP",      0.00000001, null     ], /* mining */
   //['Supply Remaining in Era',       null,                                 "PEP",      0.00000001, null     ], /* mining */
-  ['Last Eth Reward Block',         token.lastRewardEthBlockNumber,       "",           1,          null     ], /* mining */
-  ['Last Eth Block',                eth.blockNumber,                      "",           1,          null     ], /* mining */
+  //['Last Eth Reward Block',         token.lastRewardEthBlockNumber,       "",           1,          null     ], /* mining */
+  //['Last Eth Block',                eth.blockNumber,                      "",           1,          null     ], /* mining */
   //['Current Reward Era',            token.rewardEra,                      "/ 39",       1,          null     ], /* mining */
   //['Current Mining Reward',         token.getMiningReward,                "PEP",      0.00000001, null     ], /* mining */
   //['Epoch Count',                   token.epochCount,                     "",           1,          null     ], /* mining */
-  ['Total Supply',                  token.totalSupply,                    "PEP",      0.00000001, null     ], /* supply */
+  ['Total Supply',                  token.totalSupply,                    "PEP",      1, null     ], /* supply */
   //['Mining Target',                 token.miningTarget,                   "",           1,          null     ], /* mining */
   ['',                              null,                                 "",           1,          null     ], /* */
   //['Token Holders',                 null,                                 "holders",    1,          null     ], /* usage */
