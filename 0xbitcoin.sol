@@ -147,7 +147,7 @@ contract _Cryptopepes is ERC20Interface, Owned {
         symbol = "PEP";
         name = "CryptopepesToken";
         decimals = 18;
-        _totalSupply = 50000000 **uint(decimals);
+        _totalSupply = 50000000;
         if(locked) revert();
         locked = true;
         tokensMinted = 0;
