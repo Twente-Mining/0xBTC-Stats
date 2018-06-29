@@ -56,29 +56,11 @@ var pool_colors = {
 }
 
 
-var known_miners = {
-/*  "0xf3243babf74ead828ac656877137df705868fd66" : [ "Token Mining Pool", "http://TokenMiningPool.com",     pool_colors.orange ],
-/*  "0x53ce57325c126145de454719b4931600a0bd6fc4" : [ "0xPool",            "http://0xPool.io",               pool_colors.purple ],
-/*  "0x98b155d9a42791ce475acc336ae348a72b2e8714" : [ "0xBTCpool",         "http://0xBTCpool.com",           pool_colors.blue ],
-/*  "0x363b5534fb8b5f615583c7329c9ca8ce6edaf6e6" : [ "mike.rs pool",      "http://mike.rs",            pool_colors.green ],
-/*  "0x02c8832baf93380562b0c8ce18e2f709d6514c60" : [ "mike.rs pool B",    "http://b.mike.rs",          pool_colors.green ],
-/*  "0x8dcee1c6302232c4cc5ce7b5ee8be16c1f9fd961" : [ "Mine0xBTC",         "http://mine0xbtc.eu",            pool_colors.darkpurple ],
-/*  "0x20744acca6966c0f45a80aa7baf778f4517351a4" : [ "PoolOfD32th",       "http://0xbtc.poolofd32th.club",  pool_colors.darkred ],
-/*  "0xd4ddfd51956c19f624e948abc8619e56e5dc3958" : [ "0xMiningPool",      "http://0xminingpool.com/",       pool_colors.teal ],
-/*  "0x88c2952c9e9c56e8402d1b6ce6ab986747336b30" : [ "0xbtc.wolfpool.io", "http://wolfpool.io/",            pool_colors.red ],
-/*  "0x540d752a388b4fc1c9deeb1cd3716a2b7875d8a6" : [ "tosti.ro",          "http://tosti.ro/",               pool_colors.slate ],
-/*  "0xbbdf0402e51d12950bd8bbd50a25ed1aba5615ef" : [ "ExtremeHash",       "http://0xbtc.extremehash.io/",   pool_colors.brightred ],
-/*  "0x7d28994733e6dbb93fc285c01d1639e3203b54e4" : [ "Wutime.com",        "http://wutime.com/",             pool_colors.royal ],
-/* "0x02e03db268488716c161721663501014fa031250" : [ "xb.veo.network",    "https://xb.veo.network:2096/",   pool_colors.pink ],
-/* "0xbf39de3c506f1e809b4e10e00dd22eb331abf334" : [ "xb.veo.network",    "https://xb.veo.network:2096/",   pool_colors.pink ],
-/*  "0x5404bd6b428bb8e326880849a61f0e7443ef5381" : [ "666pool",           "http://0xbtc.666pool.cn/",       pool_colors.grey ],
-/*  "0x6917035f1deecc51fa475be4a2dc5528b92fd6b0" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],
-/*  "0x693d59285fefbd6e7be1b87be959eade2a4bf099" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],
-/*  "0x697f698dd492d71734bcaec77fd5065fa7a95a63" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],
-/*  "0x69ebd94944f0dba3e9416c609fbbe437b45d91ab" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],
-/*  "0x69b85604799d16d938835852e497866a7b280323" : [ "PiZzA pool",        "http://gpu.PiZzA",               pool_colors.yellow ],*/
+var known_miners = 
+{
   
   "0x665260b108739033826A3bCFc58C02E408d9dB36" : [ " TWM",        "pool.twentemining.nl",               pool_colors.yellow ],
+
 }
 
 
@@ -198,22 +180,22 @@ stats = [
   ['Estimated Hashrate',            null,                                 "Mh/s",       1,          null     ], /* mining difficulty */
   ['Rewards Until Readjustment',    null,                                 "",           1,          null     ], /* mining difficulty */
   ['Current Average Reward Time',   null,                                 "minutes",    1,          null     ], /* mining difficulty */
-  ['Last Difficulty Start Block',   token.latestDifficultyPeriodStarted,  "",           1,          null     ], /* mining difficulty */
-  ['Tokens Minted',                 token.tokensMinted,                   "PEP",      0.00000001, null     ], /* supply */
-  ['Max Supply for Current Era',    token.maxSupplyForEra,                "PEP",      0.00000001, null     ], /* mining */
-  ['Supply Remaining in Era',       null,                                 "PEP",      0.00000001, null     ], /* mining */
+  //['Last Difficulty Start Block',   token.latestDifficultyPeriodStarted,  "",           1,          null     ], /* mining difficulty */
+  //['Tokens Minted',                 token.tokensMinted,                   "PEP",      0.00000001, null     ], /* supply */
+  //['Max Supply for Current Era',    token.maxSupplyForEra,                "PEP",      0.00000001, null     ], /* mining */
+  //['Supply Remaining in Era',       null,                                 "PEP",      0.00000001, null     ], /* mining */
   ['Last Eth Reward Block',         token.lastRewardEthBlockNumber,       "",           1,          null     ], /* mining */
   ['Last Eth Block',                eth.blockNumber,                      "",           1,          null     ], /* mining */
-  ['Current Reward Era',            token.rewardEra,                      "/ 39",       1,          null     ], /* mining */
-  ['Current Mining Reward',         token.getMiningReward,                "PEP",      0.00000001, null     ], /* mining */
-  ['Epoch Count',                   token.epochCount,                     "",           1,          null     ], /* mining */
+  //['Current Reward Era',            token.rewardEra,                      "/ 39",       1,          null     ], /* mining */
+  //['Current Mining Reward',         token.getMiningReward,                "PEP",      0.00000001, null     ], /* mining */
+  //['Epoch Count',                   token.epochCount,                     "",           1,          null     ], /* mining */
   ['Total Supply',                  token.totalSupply,                    "PEP",      0.00000001, null     ], /* supply */
   //['Mining Target',                 token.miningTarget,                   "",           1,          null     ], /* mining */
   ['',                              null,                                 "",           1,          null     ], /* */
-  ['Token Holders',                 null,                                 "holders",    1,          null     ], /* usage */
-  ['Token Transfers',               null,                                 "transfers",  1,          null     ], /* usage */
-  ['Total Contract Operations',     null,                                 "txs",        1,          null     ], /* usage */
-  //['',                              null,                                 "0xBTC",      0.00000001, null     ], /* */
+  //['Token Holders',                 null,                                 "holders",    1,          null     ], /* usage */
+  //['Token Transfers',               null,                                 "transfers",  1,          null     ], /* usage */
+  //['Total Contract Operations',     null,                                 "txs",        1,          null     ], /* usage */
+  //['',                              null,                                 "pep",      0.00000001, null     ], /* */
   //['TokenMiningPool.com Hashrate',  null,                                 "Mh/s",       1,          null     ], /* pool */
   //['0xBrute.com Hashrate',          null,                                 "Mh/s",       1,          null     ], /* pool */
   //['0xPool.io Hashrate',            null,                                 "Mh/s",       1,          null     ], /* pool */
