@@ -59,7 +59,7 @@ var pool_colors = {
 var known_miners = 
 {
   
-  "0x665260b108739033826A3bCFc58C02E408d9dB36" : [ " TWM",        "pool.twentemining.nl",               pool_colors.yellow ],
+  "0xededcA3F905abB9271fFc0E2E84CF41E8993E73b" : [ "wolf",        "http://pepe.wolfpool.io",               pool_colors.yellow ],
 
 }
 
@@ -73,7 +73,7 @@ var known_miners =
 
 /* TESTNET */
 
-var eth = new Eth(new Eth.HttpProvider("https://ropsten.infura.io/sdMzLFPZuhE6ibYPyl7O"));
+var eth = new Eth(new Eth.HttpProvider("https://mainnet.infura.io/v3/fb20fdf5423a49a1a12b298593e29acd"));
 // if (typeof window.web3 !== 'undefined' && typeof window.web3.currentProvider !== 'undefined') {
 //   var eth = new Eth(window.web3.currentProvider);
 // } else {
